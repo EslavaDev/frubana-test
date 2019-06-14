@@ -1,0 +1,36 @@
+@import 'src/assets/styles/typography';
+@import 'src/assets/styles/_settings';
+@import 'src/assets/styles/mixins';
+// .search-box-container {
+//   top: 3rem;
+//   left: 0rem;
+//   z-index: 10;
+//   position: fixed;
+//   width: 91%;
+//   @include respond-to('xsm') {
+//     width: 100%;
+//   }
+// }
+
+.ctn-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .search-icon {
+    color: gray;
+    margin-right: 0.5rem;
+  }
+  .search-input {
+    width: 100%;
+    border: 1px solid $snow-3;
+    font-size: 0.875rem;
+    padding: 0.5rem 0.9375rem;
+    border-radius: 2px;
+
+    &:active,
+    &:focus-within {
+      outline: none;
+      border-color: $cool-green;
+    }
+  }
+}

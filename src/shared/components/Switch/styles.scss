@@ -1,0 +1,105 @@
+@import 'src/assets/styles/typography';
+@import 'src/assets/styles/_settings';
+@import 'src/assets/styles/mixins';
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+.cnt-field-form {
+  // margin-bottom: 1rem;
+  width: 0%;
+
+  &.margin-0 {
+    margin-left: 23%;
+  }
+
+  .label {
+    display: block;
+    margin-bottom: 0.375rem;
+    @extend .small;
+    font-family: $semibold;
+    color: $black;
+  }
+
+  .cnt-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    position: relative;
+
+    &.disabled {
+      background-color: $white-2 !important;
+      pointer-events: none;
+    }
+
+    &.success {
+      .icon {
+        color: $cool-green;
+      }
+    }
+
+    .input {
+      width: 100%;
+      border: 0;
+      margin: 0;
+      padding: 0.5rem 0.9375rem;
+      display: block;
+      min-width: 0;
+      box-sizing: content-box;
+      background: none;
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+      transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+      @extend .body;
+
+      &::before {
+        display: none;
+      }
+
+      &.icon-right {
+        padding-right: 2rem;
+      }
+
+      &.select {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      &.text-to-right {
+        text-align: right;
+      }
+    }
+
+    .icon {
+      font-size: 0.875rem;
+      color: $brown-grey;
+      position: absolute;
+      right: 0.75rem;
+    }
+  }
+
+  small {
+    font-family: $regular;
+
+    &.error {
+      color: $coral;
+    }
+  }
+}
+
+@include placeholder {
+  color: $brown-grey;
+}
