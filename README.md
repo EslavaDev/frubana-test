@@ -8,7 +8,10 @@ Front end Frubana Test using React + Redux + Typescript + WebPack
 
 ## Frontend Developer Challenge
 
-### Requerimientos
+probar la app sin descargar el repositorio,
+url: https://frubana-2029b.firebaseapp.com
+
+### **Requerimientos**
 
 La Bodega Cachubana necesita un sistema que ayude a preparar sus órdenes para enviarlas posteriormente. El sistema de Cachubana está implementado con un realtime que va listando las órdenes a medida que se reciben. Cada orden que recibe Cachubana tiene un ID, usuario, código de región, una ruta asignada (varias órdenes pueden estar en la misma ruta), un slot de entrega y los productos que componen dicha orden. Los requerimientos del sistema son:
 
@@ -51,7 +54,7 @@ Toda la aplicacion Fue desarrollada para ser Responsive
 
 ## Steps
 
-Clonar este repositorio (`git clone`)
+Clonar este repositorio (`git clone https://github.com/EslavaDev/frubana-test.git`)
 
 NODE_VERSION : 10.13.0
 
