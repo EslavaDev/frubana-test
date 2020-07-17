@@ -120,7 +120,7 @@
     "firebase": "6.1.1",
     "history": "4.9.0",
     "ip": "1.1.5",
-    "lodash": "4.17.11",
+    "lodash": "4.17.19",
     "minimist": "1.2.0",
     "react": "16.8.4",
     "react-content-loader": "^4.2.1",
